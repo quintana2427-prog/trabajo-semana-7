@@ -1,0 +1,54 @@
+Se realizó una solicitud POST a la ruta /reportes para registrar un nuevo reporte, enviando la siguiente información:
+
+{
+"tipo": "Infraestructura",
+"descripcion": "Daño en alumbrado público"
+}
+
+Como respuesta, el servidor devolvió:
+
+{
+"mensaje": "Reporte registrado",
+"reporte": {
+"id": 1,
+"tipo": "Infraestructura",
+"descripcion": "Daño en alumbrado público"
+}
+}
+
+Posteriormente, se realizó una solicitud GET a la ruta /reportes para consultar los reportes registrados.
+
+Como respuesta, el servidor devolvió:
+
+[
+{
+"id": 1,
+"tipo": "Infraestructura",
+"descripcion": "Daño en alumbrado público"
+}
+]
+
+Esta respuesta permitió verificar que el reporte fue almacenado correctamente y que puede ser consultado desde el sistema.
+
+
+Y por ultimo se realizó una segunda solicitud POST a la ruta /reportes para registrar un nuevo reporte, enviando la siguiente información:
+
+{
+"tipo": "Ambiente",
+"descripcion": "Acumulación de residuos en una zona comunitaria"
+}
+
+Como respuesta, el servidor devolvió:
+
+{
+"mensaje": "Reporte registrado",
+"reporte": {
+"id": 2,
+"tipo": "Ambiente",
+"descripcion": "Acumulación de residuos en una zona comunitaria"
+}
+}
+
+Esta respuesta confirmó que el segundo reporte fue registrado correctamente y almacenado en el sistema.
+
+Como evidencia adicional, se anexó un documento de Word con capturas de pantalla de las pruebas realizadas en Postman, donde se observan las solicitudes y respuestas obtenidas.
